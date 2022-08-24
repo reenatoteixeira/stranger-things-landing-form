@@ -2,57 +2,54 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stranger Things Form</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Upside Down | Front-end Week</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
 
-<body>
-
+<body class="light-theme">
     <header>
-        <audio id="music">
-            <source src="assets/musics/normal-world.mpeg">
-        </audio>
-
         <div class="header-content">
-            <img class="invert-element" src="assets/images/banner/logo-en.png" alt="Main Upside Down logo.">
-            <p class="invert-element" role="text">
+            <img class="invert-element" src="assets/images/banner/logo-en.png" alt="Main Upside Down image." />
+            <p class="invert-element">
                 A journey for those who are not afraid of the unknown. The way to the Upside Down is uncertain, fraught
                 with of obstacles and dangers. But the payoff is great: saving Hawkings and the whole world from the
                 clutches of Vecna. Are you prepared? Then click the button below to enter the Upside Down!
             </p>
-            <button id="switch-theme-button" onclick="switchTheme()">Enter the Upside Down</button>
+            <button id="switch-theme-button" onclick="switchTheme()">Switch Worlds</button>
         </div>
 
         <div id="top-characters" class="world-characters"></div>
     </header>
 
     <main>
+        <div id="bottom-characters" class="world-characters"></div>
+
         <section id="section-inverted-world" class="container">
             <div class="section-texts">
-                <h1>The Upside Down</h1>
-                <p role="text">
+                <h2>The Upside Down</h2>
+                <p>
                     The Upside Down looks like a copy of our world, but with hideous creatures, scary storms, lots of
                     darkness and evil entities. A kingdom controlled by Vecna, who has plans to
-                    bring all this to our own world
+                    bring all this to our own world.
                 </p>
             </div>
-            <img class="invert-element" src="assets/images/content/inverted-world.png"
-                alt="Ilustrative picture of the Upside Down.">
+
+            <img class="invert-element" src="assets/images/content/inverted-world.png" alt="Upside Down" />
         </section>
 
         <section id="section-stranger-things-trailer" class="container">
-            <div class="video-frame" aria-hidden="true">
+            <div class="video-frame">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/yQEondeGvKo"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
             </div>
-
             <div class="section-texts">
-                <h2>Stranger Things, Vol. 4</h2>
-                <p role="text">
+                <h2>Stranger Things Vol. 4</h2>
+                <p>
                     More experienced, the heroes of Stranger Things also have to face greater challenges than
                     ever and make decisions that will change their lives forever. Check out the trailer for the fourth
                     season.
@@ -63,25 +60,24 @@
         <section id="section-stranger-things-gallery">
             <div class="container section-text">
                 <h2>The #2 most watched series on Netflix</h2>
-                <ul class="gallery-container" role="gallery">
-                    <li class="gallery-image invert-element">
-                        <img src="assets/images/content/serie-image-01.png" alt="Vecna picture.">
-                    </li>
-                    <li class="gallery-image invert-element">
-                        <img src="assets/images/content/serie-image-02.png"
-                            alt="A picture of the Stranger Things heroes.">
-                    </li>
-                    <li class="gallery-image invert-element">
-                        <img src="assets/images/content/serie-image-03.png" alt="Scarry Eleven picture.">
-                    </li>
-                </ul>
+                <div class="gallery-container">
+                    <div class="gallery-image invert-element">
+                        <img src="assets/images/content/serie-image-01.png" alt="Vecna picture." />
+                    </div>
+                    <div class="gallery-image invert-element">
+                        <img src="assets/images/content/serie-image-02.png" alt="Stranger Things heroes picture." />
+                    </div>
+                    <div class="gallery-image invert-element">
+                        <img src="assets/images/content/serie-image-03.png" alt="Scarry Eleven picture." />
+                    </div>
+                </div>
             </div>
         </section>
 
         <section id="section-form" class="container">
             <h2>The Dungeons & Dragons Club</h2>
             <p>
-                To stop Vecna, the heroes of Stranger Things need you too. The most famous D&D club in
+                To stop Vecna, the Stranger Things heroes need you too. The most famous D&D club in
                 Hawkings is open for his next adventure. If you are fearless, do like challenges and aren't
                 afraid to run the D20, it's time to sign up to be part of the new campaign.
             </p>
@@ -90,20 +86,20 @@
                 <h3>Join the D&D club and experience <span>out-of-this-world</span> experiences</h3>
 
                 <div class="form-container">
-                    <form>
-                        <label for="txtName">Full Name</label>
-                        <input type="text" name="name" id="txtName">
+                    <form action="">
+                        <label for="name">Full Name</label>
+                        <input type="text" name="name">
 
-                        <label for="txtEmail">E-mail</label>
-                        <input type="text" name="email" id="txtEmail">
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email">
 
-                        <label for="txtLevel">Level</label>
-                        <input type="text" name="level" id="txtLevel">
+                        <label for="level">Level</label>
+                        <input type="text" name="level">
 
-                        <label for="txtCharacter">Character</label>
-                        <textarea name="character" cols="30" rows="10" id="txtCharacter"></textarea>
+                        <label for="character">Character</label>
+                        <textarea name="character" cols="30" rows="10"></textarea>
 
-                        <button type="button" id="btnSubscribe">Sing Up</button>
+                        <button>Sign Up</button>
                     </form>
                     <!--<script type="module" src="assets/js/main.js"></script>-->
                 </div>
@@ -118,6 +114,8 @@
         </p>
         <img src="assets/images/footer/logo.svg" alt="DIO logo.">
     </footer>
+
+    <audio id="music" src="assets/musics/normal-world.mpeg" autoplay></audio>
 </body>
 
 </html>

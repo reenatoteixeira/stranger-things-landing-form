@@ -101,7 +101,7 @@
 
                         <button>Sign Up</button>
                     </form>
-                    <!--<script type="module" src="assets/js/main.js"></script>-->
+
                 </div>
             </div>
         </section>
@@ -114,6 +114,28 @@
         </p>
         <img src="assets/images/footer/logo.svg" alt="DIO logo.">
     </footer>
+
+    <script type="module" src="assets/js/main.js"></script>
+    <script>
+        window.addEventListener('click', function() {
+            const audio = document.getElementById('music');
+            audio.play();
+            audio.volume = 0.2;
+        })
+
+        function switchTheme() {
+            document.body.classList.toggle('dark-theme');
+            document.body.classList.toggle('light-theme');
+
+            const theme = document.body.classList[0];
+            const music = theme === 'light-theme' ? 'normal-world.mpeg' : 'inverted-world.mpeg'
+
+            const audio = document.getElementById('music');
+            audio.src = `assets/musics/${music}`;
+            audio.play();
+            audio.volume = 0.2;
+        }
+    </script>
 
     <audio id="music" src="assets/musics/normal-world.mpeg" autoplay></audio>
 </body>

@@ -6,7 +6,7 @@
 This is the project of a Stranger Things themed landing page.
 The page contains information about the series and a registration form to join the D&D club.
 All of this was built using HTML, CSS and JavaScript, integrated with a Firebase database.
-#### ⚠️ Project built during the Front-End Week event promoted by Digital Innovation One.
+#### ⚠️ Project built during the Front-End Week event promoted by [Digital Innovation One](https://github.com/digitalinnovationone).
 
 ## 💻 Technologies Used
 - HTML

@@ -86,20 +86,20 @@
                 <h3>Join the D&D club and experience <span>out-of-this-world</span> experiences</h3>
 
                 <div class="form-container">
-                    <form action="">
+                    <form>
                         <label for="name">Full Name</label>
-                        <input type="text" name="name">
+                        <input type="text" name="name" id="txtName">
 
                         <label for="email">E-mail</label>
-                        <input type="email" name="email">
+                        <input type="email" name="email" id="txtEmail">
 
                         <label for="level">Level</label>
-                        <input type="text" name="level">
+                        <input type="number" name="level" id="txtLevel">
 
                         <label for="character">Character</label>
-                        <textarea name="character" cols="30" rows="10"></textarea>
+                        <textarea name="character" cols="30" rows="10" id="txtCharacter"></textarea>
 
-                        <button>Sign Up</button>
+                        <button type="button" id="btnSubscribe">Sign Up</button>
                     </form>
 
                 </div>
@@ -115,9 +115,8 @@
         <img src="assets/images/footer/logo.svg" alt="DIO logo.">
     </footer>
 
-    <script type="module" src="assets/js/main.js"></script>
     <script>
-        window.addEventListener('click', function() {
+        window.addEventListener('click', () => {
             const audio = document.getElementById('music');
             audio.play();
             audio.volume = 0.2;
@@ -136,6 +135,8 @@
             audio.volume = 0.2;
         }
     </script>
+
+    <script src="assets/js/main.js" type="module"></script>
 
     <audio id="music" src="assets/musics/normal-world.mpeg" autoplay></audio>
 </body>
